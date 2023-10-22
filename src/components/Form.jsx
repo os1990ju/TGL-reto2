@@ -41,6 +41,7 @@ const Form = ({ handleInputChange, handleDateChange, handleFormSubmit, form}) =>
             placeholderText="Ingrese la fecha."
             selected={form.date}
             onChange={handleDateChange}
+            required
           />
 
           <input

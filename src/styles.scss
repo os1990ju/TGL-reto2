@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 .app{
-    padding-top: 80px;
+    padding-top: 7rem;
     padding-bottom: 40px;
     display: flex;
     width: 100%;
@@ -41,11 +41,11 @@ body{
             z-index: 1;
         }
         img{
-            width: 100px;
-            height: 100px;
+            width: 10rem;
+            height: 10rem;
             position: absolute;
-            top: -59px;
-            left: 166px;
+            top: -6rem;
+            left: 160px;
         }
         .error{
             color: red;
@@ -78,7 +78,10 @@ body{
         width: 13rem;
         opacity: 1; /* Establece la opacidad inicial al 1 (completamente visible) */
     }
-
+        
+    hr{
+        border: 1px #ddd solid;
+    }
     h2,h3,h4{
         text-align: center;
         color:#535353;

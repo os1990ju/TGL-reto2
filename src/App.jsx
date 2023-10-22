@@ -64,20 +64,7 @@ function App() {
       />
 
     <div className="card-container">
-    {/* {registrations.map((registration) => {
-        const { name, age, gender, owner, date } = registration;
-        return (
-          <div className="card" key={`${name}${owner}${date}`}>
-            <h2><em>Paciente</em></h2>
-            <hr/>
-            <h3>Nombre: {name}</h3>
-            <h3>Edad: {age}</h3>
-            <h3>Genero: {gender}</h3>
-            <h3>Fecha cita: {date.toLocaleDateString()}</h3>
-            <h4>Propietario: {owner}</h4>
-          </div>
-        );
-      })} */}
+
       
       <Card registrations={registrations}/>
     </div>
