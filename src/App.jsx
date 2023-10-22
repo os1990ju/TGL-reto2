@@ -1,9 +1,15 @@
 import { useState } from "react";
 import Form from "./components/Form.jsx";
 import Card from "./components/Card.jsx";
+import { useForm } from "react-hook-form";
+
 import "./styles.scss";
 
 function App() {
+
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm();
+
+  
 
   const [form, setForm] = useState({
     name: "",
@@ -36,21 +42,19 @@ function App() {
   };
 
   const handleDateChange = (date) => {
+    setValue("date", date)
     const newForm = {
       ...form,
       date: date,
     };
     setForm(newForm);
   };
-
-  const handleFormSubmit = (e)=>{
-
-    e.preventDefault();
+  const handleFormSubmit = (form) => {
+   
     setRegistrations([...registrations, form]);
     setForm({ name: "", owner: "", age:"", gender: "", date: null});
-    
   }
-  console.log(registrations);
+ 
   
   return (
     <div className="app">
@@ -60,7 +64,9 @@ function App() {
         handleInputChange={handleInputChange}
         handleDateChange={handleDateChange}
         handleFormSubmit={handleFormSubmit}
-        error={error}
+        errors={errors}
+        register = {register}
+        handleSubmit={handleSubmit}
       />
 
     <div className="card-container">
@@ -75,4 +81,3 @@ function App() {
 
 export default App;
 
-{/* <Card registrations={registrations}/> */}
