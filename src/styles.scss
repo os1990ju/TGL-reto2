@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.app{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3d3d3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .form-card{
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 13rem;
+        background-color: #fff;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        input{
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        h1{
+            text-align: center;
+            margin-top: -16px;
+            margin-bottom: 0px;
+            z-index: 1;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: -59px;
+            left: 166px;
+        }
+        .error{
+            color: red;
+            font-size: 0.7rem;
+            font-family: cursive;
+            text-align: center;
+        }
+    }
+    .card-container{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 30px;
+        justify-content: center; 
+        align-items: center; 
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr); 
+          }
+      
+          @media (max-width: 768px) {
+            grid-template-columns: 1fr; 
+          }
+    }
+    .card{
+        background: #fff;
+        border-radius: 7px;
+        border:none;
+        box-shadow: 1px 1px 7px;
+        padding: 0px 25px 0px 25px;
+        width: 13rem;
+        opacity: 1; /* Establece la opacidad inicial al 1 (completamente visible) */
+    }
+
+    h2,h3,h4{
+        text-align: center;
+        color:#535353;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    h2{
+        font-weight: 700;
+    }
+}
+
+  

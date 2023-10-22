@@ -1,0 +1,21 @@
+.button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #5182cc;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 0.7px 0.5px gray;
+    transition: 0.2s all ease-in-out;
+    color:white;
+
+    &:hover{
+        // background-color: azure;
+        // transform: scale(1.05);
+        // color: #51a8a8;
+        box-shadow: 0 5px 10px rgba(84, 94, 105, 0.5);
+        
+    }
+
+}

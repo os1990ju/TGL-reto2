@@ -1,11 +1,13 @@
+import PropTypes from "prop-types";
+import "./button.scss";
 
-//import React from 'react';
-// Define un componente de botón reutilizable
-// eslint-disable-next-line react/prop-types
-function DynamicButton({ buttonText }) {
-  return (
-    <button>{buttonText}</button>
-  );
+function DynamicButton({ buttonText}) {
+  
+  return <button className="button">{buttonText}</button>;
 }
+
+DynamicButton.propTypes = {
+  buttonText: PropTypes.string.isRequired,
+};
 
 export default DynamicButton;
